@@ -21,16 +21,19 @@
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rochester&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-    </style>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/jquery/jquery.js"></script>
 </head>
 
 <body>
     <div class="wrapper">
         <div class="background-image">
-            <nav>
+            <nav class="topnav" id="myTopnav">
                 <div class="container">
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
                     <ul class="header">
                         <li><a href="#specials">Specials</a></li>
                         <li><a href="#about">About</a></li>
@@ -48,6 +51,14 @@
             </div>
         </div>
         <!--header and hero banner over-->
+        <div class="icon-bar">
+            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="google"><i class="fa fa-google"></i></a>
+            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+        </div>
+        <!--sticky social bar ends here-->
         <div class="our-specials" id="specials">
             <div class="container">
                 <div class="section-title">
@@ -82,24 +93,26 @@
             </div>
         </div>
         <!--our specials section over-->
-        <div class="our-story" id="about"><!--100%-->
-            <div class="our-story-bgimage"></div><!--50%-->
-            <div class="container">
-                <div><!--50%-->
-                    <h3 class="our-story-title">Our Story</h3>
-                    <hr class="our-story-line">
-                    <p class="our-story-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
-                        dapibus
-                        leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus
-                        leo
-                        nec ornare diam commodo nibh.</p>
-                    <p class="our-story-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
-                        dapibus
-                        leo nec ornare diam. Sed
-                        commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare.</p>
-                </div>
+        <div class="our-story-2">
+            <div class="our-story-image">
+                <img src="/images/our-story.jpg" alt="our-story-image">
+            </div>
+
+            <div class="our-story-right">
+                <h3 class="our-story-title">Our Story</h3>
+                <hr class="our-story-line">
+                <p class="our-story-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
+                    dapibus
+                    leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus
+                    leo
+                    nec ornare diam commodo nibh.</p>
+                <p class="our-story-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
+                    dapibus
+                    leo nec ornare diam. Sed
+                    commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare.</p>
             </div>
         </div>
+
         <!--our story section over-->
 
         <div class="menu" id="menu"> <!--100%-->
@@ -304,7 +317,7 @@
             </div>
         </div>
 
-        <div class="footer2">
+        <div class="footer2" id="copyrights">
             <div class="container">
                 <div class="text">
                     <p>© 2017 Gusto. All rights reserved. Design by <a href="http://www.templatewire.com/"
@@ -320,6 +333,8 @@
             </div>
         </div>
     </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script src="/js/script.js"></script>
 </body>
 
 </html>
